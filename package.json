@@ -1,0 +1,14 @@
+{
+  "name": "shopping-list",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @shopping-list/web dev",
+    "build": "pnpm --filter @shopping-list/web build",
+    "preview": "pnpm --filter @shopping-list/web preview",
+    "typecheck": "pnpm --filter @shopping-list/web exec tsc -b",
+    "test": "pnpm --filter @shopping-list/web test"
+  }
+}
